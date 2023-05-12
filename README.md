@@ -2,7 +2,8 @@
 
 ## About the project
 
-This is a porting in TS of Bruno Simon's JS course code-structure fot ThreeJS projects with a couple of updates for the current version (0.152) and some minor tweaks.
+This is a porting in TS of Bruno Simon's JS course code-structure fot ThreeJS projects with a couple of updates for the current version (0.152) regarding new color management and lights
+Plus some minor tweaks.
 
 ## Technologies and libraries
 
@@ -21,10 +22,10 @@ This is a porting in TS of Bruno Simon's JS course code-structure fot ThreeJS pr
     git clone https://github.com/Lorenzo-Ce/code-structure-threejs
     ```
 
-2.Inside the repository install the necessary packages by running the following command in your terminal:
-  ```sh
-  npm install
-  ```
+* 2.Inside the repository install the necessary packages by running the following command in your terminal:
+    ```sh
+    npm install
+    ```
 * 2.1 After installing the necessary packages, you can run the app in development mode with:
   ```sh
   npm run dev
@@ -42,11 +43,11 @@ This is a porting in TS of Bruno Simon's JS course code-structure fot ThreeJS pr
 <table>
 <tbody>
     <tr>
-    <td align="center"><a href="https://github.com/brunosimon"><img src="https://avatars.githubusercontent.com/u/5439991?v=4" width="100px;" alt="Bruno Simon"/><br /><sub><b>Bruno Simon</b></sub></a><br /><a href="#translation-NicolasGirondi" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/brunosimon"><img src="https://avatars.githubusercontent.com/u/5439991?v=4" width="100px;" alt="Bruno Simon"/><br /><sub><b>Bruno Simon</b></sub></a><br /></td>
     </tr>
 </tbody>
 </table>
-Thanks to Bruno Simon for his amazing [course](https://threejs-journey.com/) and for the clean code structure
+Thanks to Bruno Simon for his amazing [course](https://threejs-journey.com/) and the clean code structure!
 
 ## Contributing
 

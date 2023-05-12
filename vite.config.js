@@ -2,8 +2,7 @@ export default {
     base: './',
     server:
     {
-        host: true,
-        port: 3000
+        host: true
     },
     build:
     {
