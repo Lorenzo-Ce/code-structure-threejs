@@ -16,7 +16,7 @@ export default class Enviroment {
         this.scene = this.experience.scene
         this.resources = this.experience.resources
         this.debug = this.experience.debug
-        
+
         // Debug
         if(this.debug.active)
         {
@@ -37,7 +37,6 @@ export default class Enviroment {
         this.sunLight.shadow.camera.far = 15
         this.sunLight.shadow.mapSize.set(1024, 1024)
         this.sunLight.shadow.normalBias = 0.05
-        console.log(this.sunLight)
         this.sunLight.position.set(3.5, 2, - 1.25)
         this.scene.add(this.sunLight)
 
@@ -81,8 +80,7 @@ export default class Enviroment {
 
         // Substitutes this.environmentMap.texture.encoding = THREE.sRGBEncoding
         this.environmentMap.texture.colorSpace = THREE.SRGBColorSpace 
- 
-        console.log(this.environmentMap.texture)
+
         this.scene.environment = this.environmentMap.texture
 
         this.environmentMap.updateMaterials = () =>
