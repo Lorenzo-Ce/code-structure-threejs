@@ -33,7 +33,7 @@ export default class Resources extends EventEmitter{
         this.loaders.gltfLoader = new GLTFLoader()
         this.loaders.textureLoader = new THREE.TextureLoader()
         this.loaders.cubeLoader = new THREE.CubeTextureLoader()
-        // this.loaders.DRACOLoader = new DRACOLoader()
+        this.loaders.DRACOLoader = new DRACOLoader()
     }
     startLoading(){
         //Load Each Source

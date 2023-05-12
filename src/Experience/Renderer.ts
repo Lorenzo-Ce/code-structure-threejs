@@ -29,7 +29,7 @@ export default class Renderer {
         this.instance.outputColorSpace = THREE.SRGBColorSpace 
         // Substitute usePhysicallyCorrectLights = true   
         this.instance.useLegacyLights  = false 
-        // LDR simulate HDR 
+        // LDR simulate HDR, toneMappingExposure required is around half of 0.147 version's value
         this.instance.toneMapping = THREE.CineonToneMapping 
         this.instance.toneMappingExposure = 1.75
         // ShadowMap

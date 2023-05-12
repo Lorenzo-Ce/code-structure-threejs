@@ -16,6 +16,7 @@ export default class Enviroment {
         this.scene = this.experience.scene
         this.resources = this.experience.resources
         this.debug = this.experience.debug
+        
         // Debug
         if(this.debug.active)
         {
@@ -90,8 +91,6 @@ export default class Enviroment {
             {
                 if(child instanceof THREE.Mesh && child.material instanceof THREE.MeshStandardMaterial)
                 {
-                    
-                    //PBR for standard material
                     child.material.envMap = this.environmentMap.texture
                     child.material.envMapIntensity = this.environmentMap.intensity
                     child.material.needsUpdate = true
