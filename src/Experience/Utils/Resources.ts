@@ -34,11 +34,14 @@ export default class Resources extends EventEmitter{
         this.loaders.textureLoader = new THREE.TextureLoader()
         this.loaders.cubeLoader = new THREE.CubeTextureLoader()
         this.loaders.DRACOLoader = new DRACOLoader()
+        this.loaders.DRACOLoader.setDecoderPath("/draco/")
+        this.loaders.gltfLoader.setDRACOLoader( this.loaders.DRACOLoader)
     }
     startLoading(){
         //Load Each Source
         for(const source of this.sources){
             switch(source.type){
+                case 'dracoModel':
                 case 'gltfModel': 
                     this.loaders.gltfLoader?.load(
                         source.path as string, 
@@ -62,14 +65,6 @@ export default class Resources extends EventEmitter{
                             this.sourceLoaded(source, file)
                         });
                     break; 
-                case 'dracoModel':
-                    this.loaders.DRACOLoader?.load(
-                        source.path as string,
-                        (file) => 
-                        {
-                            this.sourceLoaded(source, file)
-                        });
-                    break;
                 default: throw new Error('Asset source type not found, check your source.type')
             }
         }

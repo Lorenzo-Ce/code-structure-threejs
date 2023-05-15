@@ -1,6 +1,6 @@
 export type sourceAttributes = {
     name: string,
-    type: string,
+    type: 'texture' | 'gltfModel'| 'dracoModel' | 'cubeTexture',
     path: string[] | string
 }
 
